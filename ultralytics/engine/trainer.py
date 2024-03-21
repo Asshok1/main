@@ -345,6 +345,10 @@ class BaseTrainer:
         epoch = self.start_epoch
         while True:
             self.epoch = epoch
+
+            # asok edit
+            ashok = epoch
+            
             self.run_callbacks("on_train_epoch_start")
             self.model.train()
             if RANK != -1:
